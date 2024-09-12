@@ -1,0 +1,39 @@
+.main-body{
+    background: rgb(222, 6, 6);
+    width: 560px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    background-color: rgb(248, 245, 245);
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    font-size: 0;
+    cursor: pointer;
+    
+}
+.row:nth-child(2n)>.column:nth-child(2n){
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+.row:nth-child(2n+1)>.column:nth-child(2n+1){
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+.column:active{
+    font-size: 1.4rem;
+    
+}
